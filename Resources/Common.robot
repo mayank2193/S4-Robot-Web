@@ -4,8 +4,8 @@ Library  LambdaTestStatus.py
 
 *** Variables ***
 ${BROWSER}          ${ROBOT_BROWSER}
-&{lt_options}       browserName=${browserName}      name=RobotFramework Lambda Test    buildName=Robot Build   platformName=macOS Sonoma
-${REMOTE_URL}       http://%{LT_USERNAME}:%{LT_ACCESS_KEY}@hub.lambdatest.com/wd/hub
+&{lt_options}       browserName=safari    platformName=ios      name=RobotFramework Lambda Test    build=Robot Build real device   deviceName=iPhone.*    isRealMobile=True   w3c=Ture
+${REMOTE_URL}       http://%{LT_USERNAME}:%{LT_ACCESS_KEY}@mobile-hub.lambdatest.com/wd/hub
 ${TIMEOUT}          30000
 
 *** Keywords ***
